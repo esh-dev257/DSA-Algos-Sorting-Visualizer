@@ -1,0 +1,74 @@
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(235, 71%, 52%);
+  color: white;
+  padding: 0px 80px;
+}
+
+.header span {
+  color: rgb(43, 107, 208);
+}
+
+.header-logo {
+  font-family: "Poppins", Times, serif;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.header__options {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__option {
+  font-weight: 500;
+  margin-left: 100px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+
+/* For phones (max-width: 600px) */
+@media only screen and (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    height: auto; /* Adjust height */
+  }
+
+  .header-logo {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .header__options {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__option {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+/* For tablets and smaller laptops (601px - 1024px) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .header {
+    padding: 0px 40px;
+  }
+
+  .header-logo {
+    font-size: 1.8rem;
+  }
+
+  .header__option {
+    margin-left: 50px;
+  }
+}
